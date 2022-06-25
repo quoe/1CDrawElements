@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="ГруппаРисования" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рисование элементов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вкладка рисования элементов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>StdPicture.BusinessProcess</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ГруппаРисованияРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация1" id="46">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Все элементы с этой закладки будут программно сгенерированы при открытиии формы</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="48"/>
+						</LabelDecoration>
+						<LabelDecoration name="Декорация2" id="61">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ещё в командную панель формы добавится кнопка, которой можно указать код каких элементов генерировать</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация2КонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="63"/>
+						</LabelDecoration>
+						<InputField name="ТестРекв" id="5">
+							<DataPath>ТестРекв</DataPath>
+							<ContextMenu name="ТестРеквКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ТестРеквРасширеннаяПодсказка" id="7"/>
+							<Events>
+								<Event name="OnChange">ТестРеквПриИзменении</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="ГруппаТест" id="23">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тест </v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тест</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаТестРасширеннаяПодсказка" id="24"/>
+							<ChildItems>
+								<CheckBoxField name="ТестБул" id="41">
+									<DataPath>ТестБул</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТестБулКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ТестБулРасширеннаяПодсказка" id="43"/>
+								</CheckBoxField>
+								<UsualGroup name="ГруппаТестВложенной" id="44">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа тест вложенной</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа тест вложенной</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="ГруппаТестВложеннойРасширеннаяПодсказка" id="45"/>
+									<ChildItems>
+										<Button name="Команда1" id="13">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ИмяКоманда1</CommandName>
+											<ExtendedTooltip name="Команда1РасширеннаяПодсказка" id="14"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаНастройки" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>StdPicture.ReportSettings</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="16"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВыполнитьКоманды" id="59">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выполнить команды</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа выполнить команды</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаВыполнитьКомандыРасширеннаяПодсказка" id="60"/>
+							<ChildItems>
+								<Button name="ВыполнитьКоманду" id="55">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ВыполнитьКомандуМодуля</CommandName>
+									<ExtendedTooltip name="ВыполнитьКомандуРасширеннаяПодсказка" id="56"/>
+								</Button>
+								<Button name="ВыполнитьАвтономнуюКоманду" id="57">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ВыполнитьАвтономнуюКоманду</CommandName>
+									<ExtendedTooltip name="ВыполнитьАвтономнуюКомандуРасширеннаяПодсказка" id="58"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаЗаголовок" id="39">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Учитывать заголовок</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа заголовок</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаЗаголовокРасширеннаяПодсказка" id="40"/>
+							<ChildItems>
+								<InputField name="УчитыватьТолькоТестЗаголовка" id="33">
+									<DataPath>УчитыватьТолькоТестЗаголовка</DataPath>
+									<ContextMenu name="УчитыватьТолькоТестЗаголовкаКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="УчитыватьТолькоТестЗаголовкаРасширеннаяПодсказка" id="35"/>
+								</InputField>
+								<CheckBoxField name="ЗатиратьЗданныйТекстЗаголовка" id="36">
+									<DataPath>ЗатиратьЗаданныйТекстЗаголовка</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗатиратьЗданныйТекстЗаголовкаКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ЗатиратьЗданныйТекстЗаголовкаРасширеннаяПодсказка" id="38"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДописывать" id="49">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дописывать в названия</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дописывать в названия</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаДописыватьРасширеннаяПодсказка" id="50"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаРеквизит" id="51">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В реквизит</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Префикс</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="ГруппаРеквизитРасширеннаяПодсказка" id="52"/>
+									<ChildItems>
+										<InputField name="ПрефиксИмёнРеквизитов" id="17">
+											<DataPath>ПрефиксИмёнРеквизитов</DataPath>
+											<ContextMenu name="ПрефиксИмёнРеквизитовКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="ПрефиксИмёнРеквизитовРасширеннаяПодсказка" id="19"/>
+										</InputField>
+										<InputField name="ПостфиксИмёнРеквизитов" id="27">
+											<DataPath>ПостфиксИмёнРеквизитов</DataPath>
+											<ContextMenu name="ПостфиксИмёнРеквизитовКонтекстноеМеню" id="28"/>
+											<ExtendedTooltip name="ПостфиксИмёнРеквизитовРасширеннаяПодсказка" id="29"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаЭлемент" id="53">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В элемент</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В элемент</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="ГруппаЭлементРасширеннаяПодсказка" id="54"/>
+									<ChildItems>
+										<InputField name="ПрефиксИмёнЭлементов" id="20">
+											<DataPath>ПрефиксИмёнЭлементов</DataPath>
+											<ContextMenu name="ПрефиксИмёнЭлементовКонтекстноеМеню" id="21"/>
+											<ExtendedTooltip name="ПрефиксИмёнЭлементовРасширеннаяПодсказка" id="22"/>
+										</InputField>
+										<InputField name="ПостфиксИмёнЭлементов" id="30">
+											<DataPath>ПостфиксИмёнЭлементов</DataPath>
+											<ContextMenu name="ПостфиксИмёнЭлементовКонтекстноеМеню" id="31"/>
+											<ExtendedTooltip name="ПостфиксИмёнЭлементовРасширеннаяПодсказка" id="32"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаКода" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Программный код</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вкладка сгенерированного программного кода</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>StdPicture.ShowInList</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ГруппаКодаРасширеннаяПодсказка" id="9"/>
+					<ChildItems>
+						<Button name="Обновить" id="25">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Обновить</CommandName>
+							<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="26"/>
+						</Button>
+						<InputField name="СгенерированныйКод" id="10">
+							<DataPath>СгенерированныйКод</DataPath>
+							<Width>60</Width>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="СгенерированныйКодКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="СгенерированныйКодРасширеннаяПодсказка" id="12"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ПрограммныйКодОткрытойФормы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СсылкаНаДокумент" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+			</Type>
+			<Save>
+				<Field>СсылкаНаДокумент</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТестРекв" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест рекв</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СгенерированныйКод" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерированный код</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПрефиксИмёнРеквизитов" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Префикс имён реквизитов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПрефиксИмёнЭлементов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Префикс имён элементов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПостфиксИмёнРеквизитов" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Постфикс имён реквизитов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПостфиксИмёнЭлементов" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Постфикс имён элементов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="УчитыватьТолькоТестЗаголовка" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учитывать только тест заголовка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗатиратьЗаданныйТекстЗаголовка" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Затирать заданный текст заголовка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТестБул" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест бул</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ИмяКоманда1" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя команда1 заголовок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя команда1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Команда1Выполнить</Action>
+		</Command>
+		<Command name="Обновить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ВыполнитьКомандуМодуля" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить команду модуля</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить команду модуля (для внешней обработки)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Document</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьКоманду</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ВыполнитьАвтономнуюКоманду" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить автономную команду</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить автономную команду</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьАвтономнуюКоманду</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>
